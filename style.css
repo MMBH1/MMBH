@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+/* reset code and common code starts here */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style-type:none;
+    text-decoration:none;
+    outline:0;
+    font-weight: 400;
+}
+html{
+    background-color:#fafafa;
+    scroll-behavior:smooth;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width:120rem;
+    max-width:100%;
+    margin:auto;
+    box-shadow:0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+.text-justify{
+    text-align:justify;
+}
+.section-heading{
+    font-size:4rem;
+    text-align:center;
+    font-family: 'Agbalumo'; cursive;
+    font-weight:bold;
+}
+
+
+
+
+.slide {
+    margin-bottom: 20px;
+}
+
+.one {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 10rem;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-family: 'Agbalumo'; cursive;
+}
+
+.two {
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 45px;
+    font-weight: 500;
+}
+.two1{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+
+
+.section-center{
+    padding:5rem 1rem;
+    min-height:95vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+   
+}
+.btn{
+    background-color:bisque;
+    border:none;
+    border-radius:0.3rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    cursor:pointer;
+    padding:0.8rem ;
+    letter-spacing: 0.1rem;
+    text-transform:uppercase;
+}
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Italianno', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* reset code and common code ends here */
+
+/* header starts here */
+header{
+   display:flex;
+   justify-content: space-between;
+   align-items:center; /*vartically cernter e anar jonno*/
+   background-color: black;
+   color:white;
+   padding:0.8rem 1rem;
+   position:sticky;
+   top:0;
+   z-index:10;
+   min-height:5vh;
+}
+
+.logo-figure{
+    border:1px solid white;
+    /* border-radius:50%; */
+}
+.logo-figure2
+{
+    width: 60px;
+    height: 62px;
+}
+.logo{
+    font-size:3rem;
+    
+}
+nav li{
+    display:inline-block;
+    margin-right:2rem;
+    padding:0.5rem;
+    transition: all 0.4s;
+}
+nav li:last-child{
+    margin-right:0;
+}
+nav li:hover{
+    background-color: blueviolet;
+    border-radius:5px;
+    text-decoration:underline;
+}
+.nav-link{
+    font-size:0.8rem;
+    color:white;
+    cursor:pointer;
+    text-transform:uppercase;
+    /* padding:0 12px; */
+    font-family: 'Montserrat', sans-serif; 
+    font-weight:bold; */
+}
+/* header ends here */
+
+
+/* banner section starts here */
+#blog-banner-section{
+    padding:5rem 1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:95vh;
+}
+#blog-banner-section article{
+    flex-basis:50%; /*ordhek e anar jonno*/
+    margin:1rem;
+}
+#blog-about{
+    min-height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.banner-img{
+    max-width:100%;
+}
+#blog-banner-section-aside{
+    flex-basis:50%;
+    text-align:center;
+
+}
+.banner-heading{
+    display:inline-block;
+    padding:1rem;
+    font-size:2rem;
+    margin-bottom:1rem;
+    background-color: black;
+    color:#fff;
+
+}
+
+.banner-img{
+    height: 38pxrem;
+    width:30rem;
+    border:0.3rem solid;
+}
+
+/* banner section ends here */
+
+/* about me section starts here */
+#blog-about{
+  
+   background-color:white;
+   
+}
+.card-container{
+    display:flex;
+    align-items:center;
+}
+.card{
+    flex:3;
+    background-color:black;
+    color:white;
+    border-radius:0.6rem;
+    padding:3rem 1rem;
+    margin:2rem;
+    display:flex;
+    flex-direction:column;
+    transition:transform 0.4s;
+    /* transition-delay: 0.4s; */
+    
+}
+.card:hover{
+    transform:scale(1.1);
+    
+}
+.card-header{
+    font-size:3.5rem;
+    text-align:center;
+    margin-bottom:3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.card-description{
+    /* font-size:1rem; */
+    text-align:justify;
+    margin-bottom:1.3rem;
+}
+.card-btn{
+    align-self:center; /*btn size choto korar jonno*/
+    
+}
+.card-btn:hover{
+    cursor:pointer;
+    text-decoration:underline;
+
+}
+/* about me section ends here */
+
+/* archives section starts here */
+#archives{
+    
+}
+.archives-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding:1rem;
+    border-top:0.1rem solid;
+    border-bottom:0.1rem solid;
+}
+.archives-container-lists{
+    display:flex;
+    /* flex-direction: row; */
+    text-align:center;
+
+}
+.archives-container-list{
+    margin:1rem;
+}
+.archives-img{
+    width:100%;
+    height:100%;
+    border-radius:0.4rem;
+    transition:transform 0.3s;
+    
+}
+.archives-img:hover{
+    transform:scale(1.1);
+}
+
+/* archives section ends here */
+
+/* blog post section starts here */
+#blog-posts{
+    
+}
+.blog-post-heading{
+    margin-bottom:3rem;
+}
+.blog-post{
+    width:70%;
+    display:flex;
+    margin:1rem 0;
+    box-shadow:0.1rem 0.1rem 0.1rem black,-0.1rem 0 0.1rem;
+    transition:transform 0.3s;
+}
+.blog-post:hover{
+    transform:scale(1.1);
+}
+
+.blog-post-aside{
+    flex:1; /*aside section flex er 1 vag jayga nibe */
+}
+.blog-content{
+    flex:2; /*content section flex er 2 vag jayga nibe */
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    padding:1rem;
+    margin-left:2rem;
+}
+.blog-heading{
+    font-size:1.7rem;
+    margin-bottom:1rem;
+}
+.blog-sub-heading{
+    font-size:1.3rem;
+    margin-bottom:0.5rem;
+}
+.blog-description{
+    font-size:1rem;
+    text-align:justify;
+    margin-bottom:1rem;
+}
+.blog-btn{
+    text-transform: uppercase;
+    width:35%;
+}
+.blog-btn:hover{
+    text-decoration: underline;
+}
+.blog-img{
+    width:100%;
+    height:100%;
+}
+
+/* blog post section ends here */
+
+/* contact section starts here */
+#contact-section{
+    background-color:white;
+}
+.contact-form{
+    padding:1rem;
+    box-shadow:0.1rem 0.1rem 0.1rem black,-0.1rem 0 0.1rem;
+    margin:1rem;
+    display:flex;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom:1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   
+    
+}
+.form-control label{
+    font-size: 1.5rem;
+    flex:0.3;
+}
+input, textarea{
+    flex:0.7;
+    width:40rem;
+    font-size:1.6rem;
+    padding:2rem 1rem;
+    /* border:none; */
+    border-radius:0.6rem;
+    background-color:
+}
+textarea{
+    resize:none;
+    height:12vh;
+}
+.form-btn-field{
+    display:flex;
+    justify-content: flex-end;
+}
+.contact-btn{
+    width:30%;
+}
+
+/* contact section ends here */
+
+/* footer section starts here */
+
+footer{
+    background-color: black;
+    color:white;
+    padding:1rem;
+    
+    display:flex;
+    justify-content: space-between;
+    font-size:0.7rem;
+    align-items: center;
+}
+.footer-btn{
+    color:white;
+    padding:0.2rem;
+    border:3px solid white;
+    border-radius: 50%;
+}
+
+
+
+
+/* footer section ends here */
+
+
+
+/* responsive starts here */
+@media (max-width:992px) {
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width:50%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-bottom:5rem;
+        font-size:1.5rem;
+    }
+
+    .card-container{
+        width:50%;
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width:768px) {
+    html{
+        font-size:55.5%;
+
+    }
+    
+    header{
+        flex-direction:column;
+    }
+    nav ul{
+        padding:1rem;
+        
+    }
+    nav li{
+        display:block;/*column er moto korar jonno*/
+        margin-right:0;
+        margin:1rem 0;
+        text-align:center;
+        /* padding:5px; */
+    } 
+    
+    .nav-link{
+        font-size:0.8rem;
+    }
+    #blog-banner-section article{
+        width:80%;
+    }
+    .card-container{
+        width:80%;
+      
+    }
+    #archives{
+        min-height:auto;
+    }
+    .blog-post{
+        flex-direction: column;
+        margin-bottom:2.5rem;
+        width:80%;
+    }
+    #contact-section{
+        min-height:auto;
+    }
+    footer{
+        flex-direction: column;
+        font-size:1.2rem;
+    }
+    .footer-ul{
+        display:flex;
+       
+    }
+    .footer-li{
+        margin-right:4rem;
+        align-items: center;
+    
+    }
+}
+
+@media (max-width:600px) {
+     html{
+        font-size:48.5%;
+    }
+    header{
+        flex-direction:column;
+    }
+    nav ul{
+        padding:2.5rem;
+        
+    }
+    nav li{
+        display:block;/*column er moto korar jonno*/
+        margin-right:0;
+        margin:1rem 0;
+        text-align:center;
+        /* padding:5px; */
+    } 
+    .nav-link{
+        font-size:1.8rem;
+    }
+    #blog-banner-section{
+        min-height:auto;
+    }
+    #blog-banner-section article{
+        width:90%;
+    }
+    .card-container{
+        width:90%;
+        font-size:1.5rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .archives-container-lists{
+        flex-wrap:wrap;
+    }
+    .blog-post{
+        
+        width:90%;
+    }
+    .blog-description{
+        font-size:1.5rem;
+    }
+    .blog-btn{
+        font-size:1.3rem;
+        width:30%;
+        text-transform: none;
+    }
+    #contact-form{
+        width:90%;
+    }
+    .form-control{
+        
+    }
+    footer{
+        flex-direction: column;
+        font-size:1.2rem;
+    }
+    .footer-ul{
+        display:flex;
+       
+    }
+    .footer-li{
+        margin-right:4rem;
+        align-items: center;
+    
+    }
+}
+
+
+
+@media (max-width:400px) {
+    
+}
+
+/* responsive ends here */
+
+
